@@ -8,6 +8,7 @@ def loadsomething(input):
 		temp = pickle.load(mydump)
 		mydump.close();
 	except:
+		print >> sys.stderr, "WARNING: Could not open file: " + input
 		pass
 	return temp
 
